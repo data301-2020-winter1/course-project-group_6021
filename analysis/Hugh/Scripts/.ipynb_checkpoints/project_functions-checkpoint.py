@@ -7,7 +7,7 @@ def load_and_process(dataset):
         pd.read_csv(dataset)
         .dropna()
         .rename(columns={'dteday':'Date','yr':'Year','cnt':'Total'})
-        
+
     )
     
     df2 = (
