@@ -1,3 +1,3 @@
-**Emily's Analysis Folder**
-*This is the folder in which all of Emil'y personal analysis will be.*
+**Data Folder**
+*This is the folder in which all of the data for our project will be.*
 
