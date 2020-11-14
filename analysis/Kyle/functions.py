@@ -6,7 +6,7 @@ def load_and_process(dataset):
     df1 = (
         pd.read_csv(dataset)
         .dropna()
-        .rename(columns={'dteday':'Date','yr':'Year','cnt':'Total'})
+        .rename(columns={'weathersit':'WeatherSituation','dteday':'Date','mnth':'Month','yr':'Year','cnt':'Total'})
         
     )
     
@@ -17,14 +17,46 @@ def load_and_process(dataset):
     
     return df2
 
-def ten_pop_days(dataset):
-    df1 = (
-        pd.read_csv(dataset)
-    )
+def ten_pop_days_twelve(dataset):
+    df1 = load_and_process(dataset)
     
-    df2 = (
-        df[["Date", "Total"]]
-    )
+    dfh = df1[df1["Year"] == 1]
     
+    df2 = dfh[["Month", "Date", "Total"]]
     
     return df2
+
+
+def ten_pop_days_eleven(dataset):
+    df1 = load_and_process(dataset)
+    
+    dfh = df1[df1["Year"] == 0]
+    
+    df2 = dfh[["Month", "Date", "Total"]]
+    
+    return df2
+
+
+
+def tpd(dataset):
+    df = ten_pop_days(dataset)
+    
+    td = df.sort_values('Total', ascending=False)
+    
+    return td
+
+
+def tpd_eleven(dataset):
+    df = ten_pop_days_eleven(dataset)
+    
+    td = df.sort_values('Total', ascending=False)
+    
+    return td
+
+def tpd_twelve(dataset):
+    df = ten_pop_days_twelve(dataset)
+    
+    td = df.sort_values('Total', ascending=False)
+    
+    return td
+    
