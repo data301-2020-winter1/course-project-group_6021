@@ -8,7 +8,7 @@ def load_and_process(dataset):
     df1 = (
         pd.read_csv(dataset)
         .dropna()
-        .rename(columns={'dteday':'date','yr':'year','mnth': 'month','weathersit': 'weather','temp':'temprature','hum':'humidity','cnt':'Total'})
+        .rename(columns={'dteday':'date','yr':'year','mnth': 'month','weathersit': 'weather','temp':'temprature','hum':'humidity','cnt':'total'})
 
     )
     
@@ -29,7 +29,7 @@ def load_and_process(dataset):
     df1 = (
         pd.read_csv(dataset)
         .dropna()
-        .rename(columns={'dteday':'Date','yr':'Year','cnt':'Total'})
+        .rename(columns={'dteday':'date','yr':'year','mnth':'month', 'weathersit': 'weather', 'hum': 'humidity', 'cnt':'total'})
         
     )
     

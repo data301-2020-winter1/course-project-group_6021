@@ -14,7 +14,7 @@
     "    df1 = (\n",
     "        pd.read_csv(dataset)\n",
     "        .dropna()\n",
-    "        .rename(columns={'dteday':'Date','yr':'Year','cnt':'Total'})\n",
+    "        .rename(columns={'dteday':'Date','yr':'year','cnt':'total'})\n",
     "        \n",
     "    )\n",
     "    \n",
