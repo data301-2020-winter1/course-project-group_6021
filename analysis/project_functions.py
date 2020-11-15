@@ -30,6 +30,19 @@ def load_and_process(dataset):
     df2['Month'] = df2['Month'].replace(['11'], ['Nov'])
     df2['Month'] = df2['Month'].replace(['12'], ['Dec'])
     
+    df2['weekday'] = df2['weekday'].astype(str)
+    df2['weekday'] = df2['weekday'].replace(['0'], ['Sun'])
+    df2['weekday'] = df2['weekday'].replace(['1'], ['Mon'])
+    df2['weekday'] = df2['weekday'].replace(['2'], ['Tues'])
+    df2['weekday'] = df2['weekday'].replace(['3'], ['Wed'])
+    df2['weekday'] = df2['weekday'].replace(['4'], ['Thur'])
+    df2['weekday'] = df2['weekday'].replace(['5'], ['Fri'])
+    df2['weekday'] = df2['weekday'].replace(['6'], ['Sat'])
+    
+    df2['WeatherSituation'] = df2['WeatherSituation'].astype(str)
+    df2['WeatherSituation'] = df2['WeatherSituation'].replace(['1'], ['Sunny'])
+    df2['WeatherSituation'] = df2['WeatherSituation'].replace(['2'], ['Cloudy'])
+    df2['WeatherSituation'] = df2['WeatherSituation'].replace(['3'], ['Rain/Snow'])
     
     
     return df2
