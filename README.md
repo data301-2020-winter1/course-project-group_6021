@@ -27,3 +27,9 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 ## References
 
 {Fanaee-T, Hadi, and Gama, Joao, 'Event labeling combining ensemble detectors and background knowledge', Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, [https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset?fbclid=IwAR03HH_yLefZVN7g27KWE6Q5QtTdo4KdznhAA5-FRT8y2lDX6Gq2rFWCQZs#].}
+
+
+## Link to our Milestone 4 
+
+https://youtu.be/iMLCk5MVuCc
+
